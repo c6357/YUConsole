@@ -17,7 +17,13 @@ FOUNDATION_EXPORT const unsigned char YUConsoleVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YUConsole/PublicHeader.h>
 
+//#ifdef DEBUG
 #define YULog(format, ...) YUConsoleLog([NSString stringWithFormat:@"%@ function : %s line : %d %@",YUFileName([NSString stringWithFormat:@"%s",__FILE__]),__FUNCTION__,__LINE__,format],## __VA_ARGS__)
+//#else
+//#define GGLog(frmt, ...)
+//#endif
+
+
 
 FOUNDATION_EXPORT void YUConsoleLog(NSString *format, ...);
 FOUNDATION_EXPORT NSString *YUFileName(NSString *fileName);
