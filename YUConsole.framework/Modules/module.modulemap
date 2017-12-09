@@ -1,0 +1,6 @@
+framework module YUConsole {
+  umbrella header "YUConsole.h"
+
+  export *
+  module * { export * }
+}
