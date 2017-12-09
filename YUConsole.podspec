@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "YUConsole"
-  s.version      = "1.0.0"
+  s.version      = "1.0.3"
   s.summary      = "真机日志调试"
   s.homepage     = "https://github.com/c6357/YUConsole"
   s.license      = "MIT"
