@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/c6357/YUConsole"
   s.license      = "MIT"
   s.author       = { "BruceYu" => "c6357@outlook.com" }
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/c6357/YUConsole.git", :tag => s.version}
   s.ios.vendored_frameworks = 'YUConsole.framework'
-  s.frameworks = 'Foundation,UIKit'
+  s.frameworks = 'Foundation','UIKit'
   s.requires_arc = true
 end
