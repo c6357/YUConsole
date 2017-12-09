@@ -2,7 +2,7 @@
 //  YUConsole.h
 //  YUConsole
 //
-//  Created by donglai on 2017/12/8.
+//  Created by BruceYu on 2017/12/8.
 //  Copyright © 2017年 BruceYu. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ FOUNDATION_EXPORT const unsigned char YUConsoleVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <YUConsole/PublicHeader.h>
 
 //#ifdef DEBUG
-#define YULog(format, ...) YUConsoleLog([NSString stringWithFormat:@"%@ : %s : %d : %@",[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent],__FUNCTION__,__LINE__,format],## __VA_ARGS__)
+#define YULog(format, ...) YUConsoleLog([NSString stringWithFormat:@"%@ : %s : %d : %@",[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent],__FUNCTION__,__LINE__,format],##__VA_ARGS__)
 //#else
 //#define GGLog(frmt, ...)
 //#endif

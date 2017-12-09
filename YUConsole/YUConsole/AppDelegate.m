@@ -23,7 +23,9 @@
     [YUConsole open];
     
     NSLog(@"hello world!");
-    YULog(@"hello %@!",@"world");
+    for (int i = 0; i<30; i++) {
+        YULog(@"hello %@!",@"world");
+    }
     
     return YES;
 }
