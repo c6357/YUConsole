@@ -20,7 +20,17 @@
     // Override point for customization after application launch.
     
     
-    [YUConsole open];
+    ///建议在真机debug下使用
+#ifdef DEBUG
+    #if TARGET_OS_IPHONE
+        [YUConsole open];
+    #endif
+#else
+    ///发布时关闭log
+    [YUConsole setHttpLogEnabled:NO];
+#endif
+    
+    
     
     NSLog(@"hello world!");
     for (int i = 0; i<30; i++) {

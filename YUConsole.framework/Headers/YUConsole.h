@@ -33,18 +33,17 @@ FOUNDATION_EXPORT const unsigned char YUConsoleVersionString[];
 FOUNDATION_EXPORT void YUConsoleLog(NSString *format, ...);
 
 /**
- <#Description#>
+ 拦截真机日志
  */
 @interface YUConsole : NSObject
 
-/**
- <#Description#>
- */
+///打印HTTP网络请求信息 默认是打印
++ (void)setHttpLogEnabled:(BOOL)enabled;
+
+///打开控制台
 + (void)open;
 
-/**
- <#Description#>
- */
+///退出控制台
 + (void)exit;
 
 @end
